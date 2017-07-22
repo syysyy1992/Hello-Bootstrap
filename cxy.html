@@ -1,0 +1,109 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			height: auto;
+			border: 1px solid #fff;
+			padding: 20px;
+			margin-top: 50px;
+		}
+		.carousel-inner img{
+			width: 100%;
+		}
+		.row img{
+			border-radius: 100px;
+			display: inline-block; 
+			overflow: hidden; 
+			max-width: 65%; 
+			vertical-align: middle;
+		}
+		.carousel-caption{
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">橙旭园</a>
+			</div>
+			<ul class="nav navbar-nav navbar-tight"> 
+				<li><a href="#"><span class="glyphicon-user"></span>注册</a></li>
+				<li><a href="#"><span class="glyphicon-log-in"></span>登录</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="http://resource.bcgame-face2face.haorenao.cn/bootstrap-banner1.jpg" alt="1">
+				<div class="carousel-caption">caption1</div>
+			</div>
+			<div class="item">
+				<img src="http://resource.bcgame-face2face.haorenao.cn/bootstrap-banner2.jpg" alt="2">
+				<div class="carousel-caption">caption2</div>
+			</div>
+			<div class="item">
+				<img src="http://resource.bcgame-face2face.haorenao.cn/bootstrap-banner3.jpg" alt="3">
+				<div class="carousel-caption">caption3</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="box col-lg-2 col-lg-offset-2 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+				<header>
+					<img src="https://www.cxy61.com/statics/images/index-video1.png" alt="">
+					<p>Bill·Gates</p>
+				</header>
+				<p>比尔盖茨是一名美国著名企业家、投资者、软件工程师、慈善家。他与保罗艾伦一起创建了微软公司，曾任微软董事长、CEO和首席软件设计师，并持有公司超过8%的普通股，也是公司最大的个人股东。</p>
+			</div>
+			<div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+				<header>
+					<img src="https://www.cxy61.com/statics/images/index-video3.png" alt="">
+					<p>Zuckerberg</p>
+				</header>
+				<p>扎克伯格出生于美国纽约州，是知名社交网站Facebook的创始人、董事长兼首席执行官，同时也是一名软件设计师。Facebook是由他和哈佛大学的同学于2004年共同创立，被誉为Facebook教主。</p>
+			</div>
+			<div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+				<header>
+					<img src="https://www.cxy61.com/statics/images/index-video2.png" alt="">
+					<p>Chris</p>
+				</header>
+				<p>克里斯·波什是一名前美国NBA职业篮球运动员，曾效力于多伦多猛龙、迈阿密热火队，司职大前锋和中锋。</p>
+			</div>
+			<div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+				<header>
+					<img src="https://resource.bcgame-face2face.haorenao.cn/cb.png" alt="">
+					<p>Uncle Bin</p>
+				</header>
+				<p>斌叔是前微软、思科高级工程师，参与Windows7开发，14岁开始学习编程，全栈工程师。创办橙旭园儿童编程潜心研究儿童编程教学方法，教学风格受各地学员的喜爱。</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$(".carousel").carousel({
+				interval:2000,
+				wrap:true
+			})
+		})
+	</script>
+</body>
+</html>
